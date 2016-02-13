@@ -36,7 +36,7 @@ fi
 if __zpluged; then
     for key in "${(k)zplugs[@]}"
     do
-        if [[ $key =~ ^$name@*$ ]] && (( $max < $#key )); then
+        if [[ $key =~ "^$name@*$" ]] && (( $max < $#key )); then
             max=$#key
             name="${key}@"
         fi
