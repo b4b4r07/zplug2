@@ -63,7 +63,7 @@ __get_zplug() {
 }
 
 function() {
-    local init_file="${${(%):-%N}:A:h}/init.zsh"
+    local init_file="${${(%):-%x}:A:h}/init.zsh"
 
     if [[ -z $ZSH_VERSION ]]; then
         printf "[zplug] zplug must be run on ZSH\n" >&2
